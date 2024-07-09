@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Agendamento de reunião com coordenador",
+      "icon": "FaCalendar",
+      "img": "https://live.staticflickr.com/65535/53846515469_1c5eb5bd29_b.jpg",
+      "tagArea": "Acadêmica",
+      "rate": "4,7",
+      "tempo": "2 dias úteis",
+      "route": "/service/agendamento"
+    },
+    {
+      "id": 2,
+      "title": "Agendamento de reunião com coordenador",
+      "icon": "FaCalendar",
+      "img": "https://live.staticflickr.com/65535/53846515469_1c5eb5bd29_b.jpg",
+      "tagArea": "Acadêmica",
+      "rate": "4,7",
+      "tempo": "2 dias úteis",
+      "route": "/service/agendamento"
+    },
+    {
+      "id": 3,
+      "title": "Agendamento de reunião com coordenador",
+      "icon": "FaCalendar",
+      "img": "https://live.staticflickr.com/65535/53846515469_1c5eb5bd29_b.jpg",
+      "tagArea": "Acadêmica",
+      "rate": "4,7",
+      "tempo": "2 dias úteis",
+      "route": "/service/agendamento"
+    }
+  ]
+}

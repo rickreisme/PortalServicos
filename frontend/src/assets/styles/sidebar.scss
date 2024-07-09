@@ -1,0 +1,105 @@
+@import "vars.scss";
+
+.menuIcon {
+  position: absolute;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 32px;
+  margin-left: 32px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.menuIcon:hover {
+  color: $azul-escuro;
+}
+
+.sidebar {
+  background-color: $cinza-base;
+  position: fixed;
+  top: 0;
+  left: -1000px;
+  height: 100%;
+  width: 335px;
+  transform: translate(-100%);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  box-shadow: 20px 3px 14px 0px $shadow;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.show-sidebar {
+  display: block;
+  transform: translate(0);
+}
+
+.sidebar-content .closeIcon {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  margin-top: 32px;
+  margin-left: 32px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.closeIcon:hover {
+  color: $azul-escuro;
+}
+
+.sidebarItens {
+  margin-top: 50px;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-right: 35px;
+  padding: 0 0 5px;
+  border-bottom: solid 1px $cinza-borda;
+}
+
+.sidebarItem a {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out, font-weight 0.3s ease;
+}
+
+.sidebarItem a:hover {
+  color: $azul-escuro;
+}
+
+.sidebarItem .icons {
+  font-size: 22px;
+  margin-right: 8px;
+}
+
+.sidebarItem span {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sidebarItem span,
+.icons {
+  margin-bottom: 10px;
+}
+
+@keyframes showSidebar {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 335px;
+  }
+}

@@ -1,0 +1,103 @@
+@import "vars.scss";
+
+.div-container-cad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  background-image: url("../imgs/fatec-background.jpg");
+
+  .cadastro-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px 5px 15px;
+    margin: 40px 0;
+    max-width: 480px;
+    min-height: 780px;
+    background-color: $vermelho-escuro-10;
+    border-radius: 30px;
+
+    img {
+      width: auto;
+      height: 64px;
+    }
+
+    p{
+      text-align: justify;
+      color: black;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      color: #fff;
+      font-weight: 400;
+      margin-top: 20px;
+      width: 90%;
+    }
+
+    .termos{
+      display: flex;
+      align-items: center;
+      height: 500px;
+      width: auto;
+      overflow: hidden;
+      background-color: #fff;
+      font-size: 15.5px;
+      padding: 0 10px;
+      border: 2px solid;
+
+      a{
+        text-decoration: underline;
+        color: black;
+        transition: .3s ease-in-out;
+      }
+      a:hover{
+        color: $azul-destaque-base;
+      }
+    }
+
+    button,
+    #callCadastro {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      width: 370px;
+      height: 44px;
+      margin-top: 23px;
+      background-color: $azul-base;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 22px;
+      transition: 0.5s ease-in-out;
+    }
+    button:hover {
+      background-color: $azul-destaque-base;
+      color: black;
+    }
+
+    .erro {
+      margin-top: 20px;
+      color: $azul-destaque-base;
+      font-weight: bold;
+    }
+
+    .obrigatorio {
+      display: flex;
+      margin-top: 10px;
+      color: #fff;
+      font-size: 11px;
+    }
+  }
+}

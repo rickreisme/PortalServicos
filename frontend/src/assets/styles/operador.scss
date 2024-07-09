@@ -1,0 +1,131 @@
+@import "vars.scss";
+
+.div-container-operador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .intro-operador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: $azul-escuro;
+  }
+
+  .opcoes-operador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90%;
+    gap: 20px;
+    margin: 20px 0;
+
+    .opcao-card-operador {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      min-width: 25rem;
+      padding: 10px 12px;
+      border-radius: 20px;
+      background-color: $vermelho-base;
+      box-shadow: 1px 1px 1px 1px $shadow;
+      color: white;
+      font-size: 20px;
+      transition: 0.3s ease-in-out;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+    .opcao-card-operador:hover {
+      background-color: $vermelho-escuro-10;
+      box-shadow: none;
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999999;
+
+    .container-modal-modulo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $vermelho-base;
+      padding: 25px 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+      .modal-header {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px;
+
+        h2 {
+          margin: 0;
+          color: white;
+        }
+
+        button {
+          display: flex;
+          background-color: transparent;
+          border: none;
+          font-size: 1.5rem;
+          color: white;
+          transition: 0.3s ease-in-out;
+        }
+        button:hover {
+          color: $azul-destaque-base;
+        }
+      }
+
+      .corpo-modal {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          margin-bottom: 10px;
+          font-size: 1rem;
+          border-radius: 10px;
+        }
+
+        button {
+          padding: 10px 20px;
+          background-color: $azul-destaque-base;
+          color: white;
+          border: none;
+          cursor: pointer;
+          font-size: 1rem;
+          border-radius: 10px;
+          transition: 0.3s ease-in-out;
+        }
+        button:hover {
+          background-color: $azul-hover;
+        }
+
+        .modal-error{
+          color: white;
+          font-weight: bold;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
