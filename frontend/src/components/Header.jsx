@@ -4,6 +4,8 @@ import { PiSignOutBold } from "react-icons/pi";
 import { Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FaBell } from "react-icons/fa";
+import { MdDashboardCustomize } from "react-icons/md";
+import { IoReorderFour } from "react-icons/io5";
 
 import useAuth from "../hooks/useAuth";
 import { useState, useEffect, useRef } from "react";
@@ -111,15 +113,19 @@ const Header = () => {
                 <div ref={menuRef} className="dropdown-menu">
                   {operador && (
                     <button className="btn-operador" onClick={handleClickOperador}>
-                      Painel de controle
+                      Painel operador&nbsp;
+                      <MdDashboardCustomize alt="Botão de painel de controle ou dashboard" className="icon-btn-operador" />
                     </button>
                   )}
 
+                  <button className="btn-servicos" onClick="">
+                    Meus serviços&nbsp;
+                    <IoReorderFour  alt="Botão de lista" className="icon-btn-servicos" />
+                  </button>
+
                   <button className="btn-logout" onClick={() => logout()}>
-                    <span className="spanBtnlogout">
-                      Sair&nbsp;
-                      <PiSignOutBold alt="Botão de logout" className="btn-logout" />
-                    </span>
+                    Sair&nbsp;
+                    <PiSignOutBold alt="Botão de logout" className="icon-btn-logout" />
                   </button>
                 </div>
               )}
