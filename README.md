@@ -1,16 +1,10 @@
 # Portal de Serviços
 
-Este é o repositório do meu projeto de portal de serviços para uma faculdade hipotética, desenvolvido utilizando Vite/React.js. Inspirado no projeto desenvolvido durante o meu estágio.
+Este é o repositório do meu projeto de portal de serviços, desenvolvido utilizando Vite/React.js. Inspirado no projeto desenvolvido durante o meu estágio.
 
-Este README fornece uma visão geral da estrutura do projeto, suas dependências e arquivos importantes. Para mais informações sobre como executar o projeto localmente, consulte as seções relevantes neste arquivo ou entre em contato com a equipe de desenvolvimento.
+Este README fornece uma visão geral da estrutura do projeto, suas dependências e arquivos importantes. Para mais informações sobre como executar o projeto localmente, consulte as seções relevantes neste arquivo ou entre em contato comigo.
 
 Desenvolvido por: Rickson Reis
-
-## Atenção!
-Desenvolvedor, leia as instruções deste arquivo com atenção.
-Leia também o documento de requisitos do projeto que está na pasta 'projeto' (`./projeto`).
-
-Lembre-se de manter este README e o documento de requisitos sempre atualizados.
 
 ## Sumário
 #### [Descrição do projeto](#descricao)
@@ -18,13 +12,11 @@ Lembre-se de manter este README e o documento de requisitos sempre atualizados.
 #### [Dependências do projeto](#dependencias)
 #### [Como executar o projeto?](#executar)
 #### [Estrutura de pastas](#pastas)
-#### [Observações aos desenvolvedores](#observacoes)
-#### [Próximas etapas do desenvolvimento do projeto](#proxetapas)
 #### [Como publicar uma módulo de serviço do Portal de Serviços como um pacote NPM](#npm)
 
 ## Descrição do projeto: <a name="descricao"></a>
 
-A base para um sistema web que seja utilizado para receber, processar e distribuir serviços; que seja modular, ou seja, que possua uma base permanente e que novos módulos possam ser adicionados conforme novos serviços sejam inseridos; e que seja programado para a web.
+Sistema web base para um portal de serviços utilizado para solicitar serviços para uma faculdade hipotética. O sistma é modular, ou seja, cada serviço disponível no portal é um módulo a ser importado de seu respectivo pacote npm que tem que ser instalado.
 
 ### Funcionamento
 
@@ -62,18 +54,6 @@ No portal os usuários solicitam serviços para a coordenaria da faculdade, que 
 - react-dom: Biblioteca JavaScript para manipulação do DOM em React.
 - react-icons: Biblioteca de ícones para React.
 - react-tooltip: Biblioteca react para implementar tooltips, ou "dicas de ferramentas" (pop up que abre quando o mouse fica sobre algum elemento da interface).
-
-### DevDependencies
-
-- @types/react: Pacote de definições de tipo para React.
-- @types/react-dom: Pacote de definições de tipo para ReactDOM.
-- @vitejs/plugin-react-swc: Plugin Vite para suporte ao React.
-- eslint: Ferramenta de análise estática de código para identificar padrões problemáticos no código JavaScript.
-- eslint-plugin-react: Plugin ESLint para regras específicas do React.
-- eslint-plugin-react-hooks: Plugin ESLint para regras específicas dos Hooks do React.
-- eslint-plugin-react-refresh: Plugin ESLint para suporte ao React Refresh.
-- sass: Pré-processador CSS que estende a funcionalidade do CSS convencional.
-- vite: Construtor de aplicativos JavaScript rápido e otimizado para desenvolvimento moderno.
 
 Como não consegui acessar diretamente o repositório do GitHub, aqui está um guia genérico para executar o projeto Vite React que está localizado na pasta `frontend` da raiz do repositório. Você pode adaptar este guia conforme necessário para o seu repositório específico.
 
@@ -173,7 +153,7 @@ cd PortalServicos
 - `portal-servicos`
   - `backend`
   - `frontend`
-  - `modulo-agendamento`
+  - `modulo-teste`
   - `projeto`
 
 ### Expansão de portal-servicos:
@@ -293,43 +273,6 @@ cd PortalServicos
 ### `./src/hooks`
 
 - `useAuth.jsx`: Hook que permite a aplicação do AuthContext do auth.jsx em componentes do site.
-
-## Observações aos desenvolvedores <a name="observacoes"></a>
-
-- ### Acesse as documentações dos frameworks e outras ferramentas utilizadas nesse projeto caso tenha alguma dúvida:
-  - [Documentação do Auth0](https://auth0.com/docs)
-  - [Documentação do Vite React](https://vitejs.dev/guide/)
-  - [Documentação do Npm](https://docs.npmjs.com)
-  - [Documentação do SASS](https://sass-lang.com/documentation/)
-  - [Documentação do Axios](https://axios-http.com/docs/intro)
-  - [Documentação do Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-  - [Documentação do Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-  
-- ### Uma conta no Flickr foi criada para hospedar a imagem do logo do Portal de Serviços que fica na tela de login do Auth0.
-
-- ### O token de longa duração da API de exibição básica do Instagram, tem que ser renovado antes de vencer (cada token de longa duração tem validade de 60 dias), no site da Meta for Developers. O passo a passo para fazer a atualização do token pode ser encontrado [na documentação da API do Instagram](https://developers.facebook.com/docs/instagram-basic-display-api/guides/long-lived-access-tokens).
-
-## Próximas etapas do desenvolvimento do projeto <a name="proxetapas"></a>
-
-- ### Desenvolver Módulo de Avaliação.
-  
-- ### Prosseguir com a configuração do acesso baseado em papéis.
-  
-- ### Será preciso verificar, no momento do primeiro login ou cadastro com a conta Microsoft (por exemplo) se o nome ou o e-mail da pessoa que está se cadastrando está na relação de determinado papel, se estiver, o papel referente é atribuido a ela.
-  
-- ### Configurar a geração de número de protocolo (padrão: número em ordem/{ano}, Ex: 1/2024, 50/2024).
-  
-- ### Configurar alguma forma de permitir que o usuário insira mais informações de cadastro após o login com as APIs pelo Auth0.
-  
-- ### Implementar lógica para adicionar o papel de operador aos usuários permitidos.
-  
-- ### Quando os alunos formandos concluem seus cursos, se tornam alunos concluintes e somem do relatório do SIGA, o sistema deverá colocar esses alunos no perfil Concluintes e limitar as solicitações dos serviços e manter o usuário com acesso ao sistema por no máximo 3 meses.
-
-- ### Desenvolver uma página onde o usuário pode verificar os serviços que solicitou e acompanhe o progresso deles.
-
-- ### Implementar ferramentas de acessibilidade no Portal.
-
-- ### Produzir um tour interativo do Portal e disponibilizar para ser visualizado.
 
 # Como publicar uma módulo de serviço do Portal de Serviços como um pacote NPM <a name="npm"></a>
 
