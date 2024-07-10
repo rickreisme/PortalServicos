@@ -13,7 +13,7 @@
     justify-content: center;
     width: 100%;
     color: white;
-    background-color: $azul-escuro;
+    background-color: $verde-darkL;
   }
 
   .opcoes-operador {
@@ -34,7 +34,7 @@
       min-width: 25rem;
       padding: 10px 12px;
       border-radius: 20px;
-      background-color: $vermelho-base;
+      background-color: $verde-seis;
       box-shadow: 1px 1px 1px 1px $shadow;
       color: white;
       font-size: 20px;
@@ -45,7 +45,7 @@
       }
     }
     .opcao-card-operador:hover {
-      background-color: $vermelho-escuro-10;
+      background-color: $verde-oito;
       box-shadow: none;
     }
   }

@@ -21,6 +21,7 @@ Sistema web base para um portal de serviços utilizado para solicitar serviços 
 ### Funcionamento
 
 No portal os usuários solicitam serviços para a coordenaria da faculdade, que recebe e responde a solicitação através de um sistema interno (não coberto nesse projeto - por enquanto).
+- Na página 'Operador', os administradores do sistema podem adicionar e excluir módulos de serviço. A página só pode ser acessada por quem tem papel (role) de 'operador' atrelado ao seu usuário.
 
 ## Linguagem/Framework utilizado: <a name="linguagem"></a>
 ### Vite React.js
